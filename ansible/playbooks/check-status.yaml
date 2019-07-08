@@ -1,0 +1,8 @@
+# check status
+
+---
+  - hosts: webservers
+    beome: true
+    tasks:
+      - name: check status of apache
+        command: service httpd status

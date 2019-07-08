@@ -1,0 +1,7 @@
+# uname.yaml
+
+---
+  - hosts: webservers
+    tasks:
+      - name: get OS type
+        shell: uname

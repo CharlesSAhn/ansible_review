@@ -1,0 +1,10 @@
+# yum-update
+
+---
+  - hosts: webservers
+    become: true    # run as sudo
+    tasks:
+      - name: updating yum packages
+        yum:
+          name=*
+          state=latest
